@@ -1,0 +1,9 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Istanbul
+
+# Laravel-specific rewrite rules
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ /public/$1 [L]
+</IfModule>

